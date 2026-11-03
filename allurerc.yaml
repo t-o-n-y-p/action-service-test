@@ -1,0 +1,16 @@
+hideLabels:
+  - "package"
+  - "thread"
+  - "host"
+  - "testClass"
+  - "testMethod"
+  - "framework"
+  - "language"
+  - "junit.platform.uniqueid"
+plugins:
+  awesome:
+    options:
+      groupBy:
+        - "epic"
+        - "feature"
+        - "story"

@@ -1,0 +1,19 @@
+services:
+  application:
+    container_name: action-service
+    image: action-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    command:
+      - "${API_KEY?Error: Missing API_KEY!}"
+
+  wiremock:
+    container_name: wiremock
+    image: wiremock/wiremock:3.13.2
+    volumes:
+      - ./wiremock:/home/wiremock:ro
+    command:
+      - "--verbose"

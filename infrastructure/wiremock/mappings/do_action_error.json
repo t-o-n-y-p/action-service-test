@@ -1,0 +1,15 @@
+{
+  "priority": 1,
+  "request": {
+    "url": "/doAction",
+    "method": "POST",
+    "formParameters": {
+      "token": {
+        "matches": ".*1$"
+      }
+    }
+  },
+  "response": {
+    "status": 400
+  }
+}
